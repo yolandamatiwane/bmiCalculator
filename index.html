@@ -12,19 +12,24 @@
     <div id="card" class="card">
         <div class="card-body">
             <h3 class="card-title">BMI CALCULATOR:</h3>
-            <label>Weight(kg):</label> <input type="text" id="weight">
+            <form>
+                <div class="mb-3">
+                    <label for="weight" class="form-label">Weight(kg):</label>
+                    <input type="text" id="weight">
+                 
+                </div>
+                <div class="mb-3">
+                    <label for="height" class="form-label">Height(m):</label>
+                    <input type="text" id="height">
+                  
+                </div>
+                <div>
+                    <input type="text" id="ans"> <button class="btn">Calculate</button> <button id="btn2" class="btn">Reset</button>
+                </div>
+              </form>
             <br>
-            <br>
-            <label>Height(m):</label> <input type="text" id="height">
-            <br>
-            <br>
-            <input type="text" id="ans"> <button class="btn">Calculate</button>
-            <br>
-            <div id="inner" class="card">
+            <div>
                 <p class="response"></p>
-                <br>
-                
-                <button id="btn2" class="btn">Reset</button>
             </div>
         </div>
       </div>

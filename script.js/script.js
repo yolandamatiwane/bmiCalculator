@@ -7,8 +7,9 @@ let btn = document.querySelector('.btn')
 let resp = document.querySelector('.response')
 let reset = document.querySelector('#btn2')
 
-btn.addEventListener('click', ()=>{
-    ans.value = eval(`${weight.value}/${height.value**2}`).toFixed(2)
+btn.addEventListener('click', (event)=>{
+    ans.value = eval(`${weight.value}+${height.value**2}`)
+   
     switch (true) {
         case ans.value<18.5:
             resp.innerText = 'Your BMI is less than 18.5, you are underweight'
@@ -27,6 +28,7 @@ btn.addEventListener('click', ()=>{
         default:
             break;
     }
+    event.preventDefault()
 })
 
 reset.addEventListener('click',()=>{

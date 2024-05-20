@@ -35,24 +35,17 @@ span{
     font-size: larger;
     color:rgb(19, 61, 128) ;
 }
-#inner{
-    width: 50%;
-    height: 200px;
-    margin-left:200px ;
-    background-color: rgb(172, 225, 238);
-    font-size: x-large;
-    color: rgb(2, 55, 57) ;
-    justify-content: center;
-    font-weight: 900;
-    border: none;
-}
-#btn2{
-    width: 200px;
-    margin-left: 60px;
-}
 
-@media(max-width: 480px){
-    .class-title{
-        font-size: 12px;
+
+@media(max-width: 840px){
+    #card{
+        font-size: 10px;
+        width: fit-content;
+        font-weight: 500;
+        justify-content: center;
+        
+    }
+    body{
+        margin: auto;
     }
 }
